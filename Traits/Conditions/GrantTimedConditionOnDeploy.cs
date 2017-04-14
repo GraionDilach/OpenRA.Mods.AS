@@ -143,7 +143,7 @@ namespace OpenRA.Mods.AS.Traits
 			return order.OrderString == "GrantConditionOnDeploy" && deployState == TimedDeployState.Ready ? info.Voice : null;
 		}
 
-		void Deploy()
+		public void Deploy()
 		{
 			// Something went wrong, most likely due to deploy order spam and the fact that this is a delayed action.
 			if (deployState != TimedDeployState.Ready)
